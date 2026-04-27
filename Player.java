@@ -14,7 +14,7 @@ public class Player
     * @param symbol The symbol for player
     */
    public Player(String symbol) {
-       symbol = symbol;
+       this.symbol = symbol;  //won't return null
    }
    
    /**
