@@ -21,6 +21,9 @@ public class Game
         player1 = new Player("X");
         player2 = new Player ("0");
     }
-
+    
+    public void play () {
+        //added so game can actually start
+    }
 }
 

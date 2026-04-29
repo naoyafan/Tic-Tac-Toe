@@ -1,12 +1,12 @@
 #BlueJ package file
-dependency1.from=Game
+dependency1.from=Player
 dependency1.to=Board
 dependency1.type=UsesDependency
 dependency2.from=Game
-dependency2.to=Player
+dependency2.to=Board
 dependency2.type=UsesDependency
-dependency3.from=Player
-dependency3.to=Board
+dependency3.from=Game
+dependency3.to=Player
 dependency3.type=UsesDependency
 editor.fx.0.height=751
 editor.fx.0.width=671
