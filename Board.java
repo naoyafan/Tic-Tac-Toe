@@ -32,17 +32,35 @@ public class Board
         return SIZE;
     }
     
+    /**
+     * puts the symbol on the board from the 1-9
+     */
     public void makeMove(int move, String symbol) {
-    // TODO
+        //turns 1-9 into 0-2 numerals
+        int row = (move - 1) / SIZE;
+        int col = (move - 1) % SIZE;
+        
+        board[row][col] = symbol;
     }
     
-    public String determineWinner() {
+    /**
+     * sees if every spot on board is used
+     * @return true if it doesn't return false it is full
+     */
+    public boolean isBoardFull() {
+        //iterates through each row with nested for loop
+        for (int row = 0; row < SIZE; row++) {
+        for (int col =0; col < SIZE; col++) { //inner loop that iterates every column in said row
+              if(board[row][col] == null) { //if one empty is found it means boards not full
+                 return false;
+                }
+            }
+        }
+        return true;
+    }
+    
+      public String determineWinner() {
     // TODO
     return null;
-    }
-    
-    public boolean isBoardFull() {
-    // TODO
-    return false;
     }
 }

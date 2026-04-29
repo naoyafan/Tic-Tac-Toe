@@ -1,4 +1,4 @@
-
+import java.util.Random;
 /**
  * Write a description of class Player here.
  * represents the players
@@ -24,8 +24,15 @@ public class Player
        return symbol;
    }
    
+   /**
+    * makes a random move from 1 and number of spaces
+    * @param b Current board played on
+    * @return Integer represents the move chosen from 1-maxSpaces
+    */
    public int getMove(Board b) {
-    // TODO
-    return 0;
+    Random rand = new Random();
+    int maxSpaces = b.getSize() * b.getSize(); //3x3=9 
+    
+    return rand.nextInt(maxSpaces) + 1; //add 1 so it turns to 1-9
    }
 }
