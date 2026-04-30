@@ -32,7 +32,12 @@ public class Player
    public int getMove(Board b) {
     Random rand = new Random();
     int maxSpaces = b.getSize() * b.getSize(); //3x3=9 
+    int move = rand.nextInt(maxSpaces) + 1; //guess
     
-    return rand.nextInt(maxSpaces) + 1; //add 1 so it turns to 1-9
+    //If the guess isn't valid pick new ones till it is
+    while (!b.isValidMove(move)) {  
+        move = rand.nextInt(maxSpaces) + 1;
+    }
+    return move; //move is valid when the loop breaks
    }
 }

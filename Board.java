@@ -63,4 +63,31 @@ public class Board
     // TODO
     return null;
     }
+    
+    /**
+     * Will check if certain spot on board is already taken
+     * @param move The 1-9 position to check
+     * @return true If spot isn't null and false if else
+     */
+    private boolean isSpotTaken(int move) {
+         //turns 1-9 into 0-2 numerals
+        int row = (move - 1) / SIZE;
+        int col = (move - 1) % SIZE;
+        //if spot isn't null means a symbol is already there
+        return board[row][col] != null;
+    }
+    
+    /**
+     * Determines if a move is within boundry and not taken
+     * @param move The one position to validate
+     * @return true If move is 1-9 with an empty spot else false
+     */
+    public boolean isValidMove(int move) {
+        int maxSpaces = SIZE * SIZE;
+                
+        if (move >= 1 && move <= maxSpaces) { //checks if number is on the board
+            return !isSpotTaken(move); //want true if spots not taken
+        }
+        return false; //number either <1 or >9
+    }
 }
