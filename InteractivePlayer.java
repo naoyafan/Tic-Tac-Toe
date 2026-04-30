@@ -30,7 +30,7 @@ public class InteractivePlayer extends Player
    /**
     * @return Scanner put on this player
     */
-   public Scanner getScanner() {
+   public Scanner getScan() {
        return scan;
    }
 }
