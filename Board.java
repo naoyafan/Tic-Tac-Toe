@@ -59,9 +59,39 @@ public class Board
         return true;
     }
     
-      public String determineWinner() {
-    // TODO
-    return null;
+    /**
+     * Checks board for any three strikes
+     * @return "X" or "0" if someone wins, null if not
+     */
+    public String determineWinner() {
+        //checks all rows
+        for (int r = 0; r < SIZE; r++) {
+            //make sure computer doesn't think 3 nulls means a winner
+            //if a = b and b = c then all spots are equal
+            if (board[r][0] != null && board[r][0].equals(board[r][1]) && board[r][1].equals(board[r][2])) {
+                return board[r][0]; //returns x or 0
+            }
+        }
+        
+        //checks all columns
+        for (int c = 0; c < SIZE; c++) {
+            if (board[0][c] != null && board[0][c].equals(board[1][c]) && board[1][c].equals(board[2][c])) {
+                return board[0][c]; //returns x or 0
+            }
+        }
+        
+        //checks diagnol from top left 
+        if (board[0][0] != null && board[0][0].equals(board[1][1]) && board[1][1].equals(board[2][2])) {
+            return board[0][0];
+        }
+        
+        //checks diagnol from top right
+        if (board[0][2] != null && board[0][2].equals(board[1][1]) && board[1][1].equals(board[2][0])) {
+            return board[0][2];
+        }
+        
+        //If nothing is found
+        return null;
     }
     
     /**

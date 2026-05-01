@@ -33,4 +33,22 @@ public class InteractivePlayer extends Player
    public Scanner getScan() {
        return scan;
    }
+   
+   /**
+    * Prompts a move to be made and sees if its valid
+    * @param b the Board object used to see if the move is valid
+    * @return validated move (1-9) the player chooses
+    */
+   @Override
+   public int getMove(Board b) {
+       System.out.println("Make your move (1-9)");
+       int move = scan.nextInt(); //players choice
+       
+       //while the move isn't valid this will repeat
+       while (!b.isValidMove(move)) {
+           System.out.println("Spots taken bub, enter another one.");
+           move = scan.nextInt(); //player gets to choose again
+       }
+       return move;
+   }
 }

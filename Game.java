@@ -10,7 +10,7 @@ public class Game
     // instance variables 
     private Board gameBoard;
     private Player player1;
-    private Player player2;
+    private InteractivePlayer player2;
     
     /**
      * Makes new game sessions
@@ -19,7 +19,7 @@ public class Game
     public Game() {
         gameBoard = new Board();
         player1 = new Player("X");
-        player2 = new Player ("0");
+        player2 = new InteractivePlayer ("0");
     }
     
     public void play () {
