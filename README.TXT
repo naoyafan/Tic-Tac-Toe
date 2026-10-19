@@ -1,12 +1,17 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all they need to know. The comments should usually include at least:
-------------------------------------------------------------------------
+# Tic-Tac-Toe (Java)
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+A terminal/console-based Tic-Tac-Toe game written in Java using object-oriented programming principles.
+
+## Features
+* Interactive two-player gameplay
+* Move validation and turn tracking
+* Automatic victory and draw condition detection
+
+## How to Run
+1. Open the project in **BlueJ** (or any standard Java IDE).
+2. Right-click the `Game` (or main) class.
+3. Call `main(String[] args)` to start playing!
+
+## Tech Stack
+* **Language:** Java
+* **IDE:** BlueJ
