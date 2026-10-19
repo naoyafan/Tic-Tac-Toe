@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=InteractivePlayer
+comment0.text=\n\ Write\ a\ description\ of\ class\ InteractivePlayer\ here.\n\ Represents\ a\ player\ controlled\ by\ a\ person\ in\ Tic\ Tac\ Toe\ \n\ @author\ (Sterling)\n\ @version\ (4/29/26)\n
+comment1.params=s
+comment1.target=InteractivePlayer(java.lang.String)
+comment1.text=\n\ Constructor\ for\ giving\ the\ players\ symbol\ and\ new\ scan\n\ @param\ s\ The\ String\ symbol\ ("X"\ or\ "O")\ for\ this\ player\n
+comment2.params=s\ sc
+comment2.target=InteractivePlayer(java.lang.String,\ java.util.Scanner)
+comment2.text=\n\ Constructor\ that\ lets\ existing\ Scanner\ in\n\ @param\ s\ The\ String\ symbol\ ("X"\ or\ "O")\ for\ this\ player\n\ @param\ sc\ The\ existing\ Scanner\ object\ thats\ use\ for\ input\n
+comment3.params=
+comment3.target=java.util.Scanner\ getScan()
+comment3.text=\n\ @return\ Scanner\ put\ on\ this\ player\n
+comment4.params=b
+comment4.target=int\ getMove(Board)
+comment4.text=\n\ Prompts\ a\ move\ to\ be\ made\ and\ sees\ if\ its\ valid\n\ @param\ b\ the\ Board\ object\ used\ to\ see\ if\ the\ move\ is\ valid\n\ @return\ validated\ move\ (1-9)\ the\ player\ chooses\n
+numComments=5

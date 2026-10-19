@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Player
+comment0.text=\n\ Write\ a\ description\ of\ class\ Player\ here.\n\ represents\ the\ players\n\ @author\ (Sterling)\n\ @version\ (4/23/26)\n
+comment1.params=symbol
+comment1.target=Player(java.lang.String)
+comment1.text=\n\ makes\ player\ and\ gives\ it\ unique\ symbol\n\ @param\ symbol\ The\ symbol\ for\ player\n
+comment2.params=
+comment2.target=java.lang.String\ getSymbol()
+comment2.text=\n\ @return\ the\ players\ symbol\n
+comment3.params=b
+comment3.target=int\ getMove(Board)
+comment3.text=\n\ makes\ a\ random\ move\ from\ 1\ and\ number\ of\ spaces\n\ @param\ b\ Current\ board\ played\ on\n\ @return\ Integer\ represents\ the\ move\ chosen\ from\ 1-maxSpaces\n
+numComments=4

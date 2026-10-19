@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Game
+comment0.text=\n\ Write\ a\ description\ of\ class\ Game\ here.\n\ Puppeteers\ the\ game\ \n\ @author\ (Sterling)\n\ @version\ (4/23/26)\n
+comment1.params=
+comment1.target=Game()
+comment1.text=\n\ Makes\ new\ game\ sessions\n\ sets\ the\ board\ up\ and\ gives\ player1\ "X"\ and\ player2\ "0"\n
+comment2.params=
+comment2.target=void\ play()
+numComments=3
